@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+a{
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+:root {
+  --bg-color: #161501;
+  --color1: #ff812c;
+  --color2: #dd2910;
+  --color3: #8e522e;
+}
+
+.main {
+  width: 100%;
+  height: 1000vh;
+  background-color: var(--bg-color);
+}

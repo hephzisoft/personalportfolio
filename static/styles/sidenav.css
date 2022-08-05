@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Uchen&display=swap");
+:root {
+  --bg-color: #161501;
+  --color1: #ff812c;
+  --color2: #dd2910;
+  --color3: #8e522e;
+
+  --text-white: whitesmoke;
+}
+
+.sidenav {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--color1);
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.sidenav .logo {
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  margin-top: 100px;
+}
+.sidenav .nav ul {
+  list-style: none;
+  text-align: center;
+  width: 80%;
+  height: 150px;
+  margin-top: 50px;
+}
+.sidenav .nav ul li a {
+  color: var(--text-white);
+  font-family: "Uchen", serif;
+  text-decoration: none;
+  padding-top: 10px;
+}
+.sidenav .footer {
+  width: 80%;
+  word-wrap: break-word;
+  text-align: center;
+  font-family: "Uchen", serif;
+  margin: auto;
+  color: var(--text-white);
+  margin-top: 60px;
+}
+.sidenav .footer a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+.sidenav .footer a:hover {
+  border-bottom: 1px solid var(--color2);
+}
+
+.social {
+  background-color: var(--color1);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 90%;
+  height: 40px;
+}
+
