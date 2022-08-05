@@ -4,7 +4,6 @@
   --color1: #ff812c;
   --color2: #dd2910;
   --color3: #8e522e;
-
   --text-white: whitesmoke;
 }
 
@@ -12,31 +11,30 @@
   width: 15%;
   height: 100vh;
   position: fixed;
-  background-color: var(--color1);
+  background-color: var(--color3);
   display: block;
   align-items: center;
-  justify-content: center;
 }
-.sidenav .logo {
+.sidenav .large .logo {
   width: 80%;
   height: 150px;
   margin: auto;
   margin-top: 100px;
 }
-.sidenav .nav ul {
+.sidenav .large .nav ul {
   list-style: none;
   text-align: center;
   width: 80%;
   height: 150px;
   margin-top: 50px;
 }
-.sidenav .nav ul li a {
+.sidenav .large .nav ul li a {
   color: var(--text-white);
   font-family: "Uchen", serif;
   text-decoration: none;
   padding-top: 10px;
 }
-.sidenav .footer {
+.sidenav .large .footer {
   width: 80%;
   word-wrap: break-word;
   text-align: center;
@@ -45,20 +43,133 @@
   color: var(--text-white);
   margin-top: 60px;
 }
-.sidenav .footer a {
+.sidenav .large .footer a {
   color: var(--text-white);
   text-decoration: none;
 }
-.sidenav .footer a:hover {
+.sidenav .large .footer a:hover {
   border-bottom: 1px solid var(--color2);
 }
 
 .social {
-  background-color: var(--color1);
+  background-color: var(--color3);
   position: absolute;
   right: 0px;
   top: 0px;
   width: 90%;
-  height: 40px;
+  height: 7vh;
 }
-
+.social ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  margin-right: 20px;
+  align-items: center;
+  margin-top: 5px;
+}
+.social ul li {
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .sidenav {
+    padding-top: 20%;
+    z-index: 10;
+    width: 25%;
+  }
+  .sidenav .nav ul {
+    text-align: center;
+  }
+}
+@media (max-width: 766px) {
+  .burger {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    padding: 5px;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid var(--bg-color);
+    cursor: pointer;
+  }
+  .burger .line {
+    width: 25px;
+    height: 2px;
+    margin: 3px auto 3px auto;
+    padding: 2px;
+    border-radius: 2px;
+    background-color: var(--color1);
+  }
+  .social {
+    width: 100%;
+    z-index: 100;
+    height: 7vh;
+    position: fixed;
+  }
+  .social ul li {
+    margin-top: 5px;
+  }
+  .sidenav {
+    width: 50%;
+    height: 93vh;
+    top: 7vh;
+    position: absolute;
+    background-color: var(--color3);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    z-index: 10;
+  }
+  .large {
+    display: block;
+  }
+  .sidenav .large .logo {
+    margin-top: 30px;
+  }
+  .sidenav .large .nav ul {
+    margin-top: 35px;
+  }
+  .sidenav .large .footer {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .sidenav .large .logo {
+    margin-top: 10px;
+  }
+  .sidenav .large .nav ul {
+    margin-top: 0px;
+  }
+  .sidenav .large .footer {
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 100px;
+  }
+  .sidenav {
+    width: 50%;
+    height: 90vh;
+    top: 10vh;
+  }
+  .social {
+    width: 100%;
+    z-index: 100;
+    height: 10vh;
+    position: fixed;
+  }
+}
+.sidenav-active {
+  transform: translateX(0%);
+}
+@keyframes navFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
