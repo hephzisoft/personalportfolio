@@ -5,20 +5,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hephzisoft</title>
+    <!-- **** Google font ***** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Uchen&display=swap"
+      rel="stylesheet"
+    />
+    <!-- **** Favicon **** -->
     <link
       rel="shortcut icon"
       href="https://res.cloudinary.com/hephzisoft/image/upload/v1659625589/Hephzisoft/Free_Sample_By_Wix_pdwndp.jpg"
       type="image/x-icon"
     />
+    <!-- **** CSS *** -->
     <link rel="stylesheet" href="{% static 'styles/main.css' %}" />
     <link rel="stylesheet" href="{% static 'styles/sidenav.css' %}" />
+    <!-- **** Bootstrap *** -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <!-- font awesome -->
+    <!-- *** font awesome **-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
       integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
@@ -36,7 +46,9 @@
   <body>
     {% include 'social.html' %} {% include 'sidenav.html' %} {% block content %}
     {% endblock %}
+    <!-- *** Javascript *** -->
     <script src="{% static 'js/main.js' %}"></script>
+    <!-- **** Bootstrap js ****  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

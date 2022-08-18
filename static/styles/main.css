@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 :root {
-  --bg-color: #161501;
+  --bg-color: #666362;
   --color1: #ff812c;
   --color2: #dd2910;
   --color3: #8e522e;
@@ -24,6 +24,21 @@ body {
   height: 1000vh;
   z-index: 0;
   background-color: var(--bg-color);
+}
+.info {
+  background-image: url("https://res.cloudinary.com/hephzisoft/image/upload/v1659725423/Hephzisoft/pexels-ivan-samkov-9629901_dbr6vi.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 93vh;
+  background-size: cover;
+}
+.info-text{
+  position: absolute;
+  left: 30px;
+}
+.info-text h2 span{
+  color: var(--color2);
 }
 @media (max-width: 500px) {
   .main {
