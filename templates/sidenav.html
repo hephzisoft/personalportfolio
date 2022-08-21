@@ -1,4 +1,5 @@
 {% load static %}
+{% load custom_tags %}
 <nav class="sidenav">
   <div class="large">
     <div class="logo nav-link">
@@ -10,14 +11,14 @@
     </div>
     <div class="nav nav-link">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% anchor 'home' 'about' %}">About</a></li>
         <li><a href="">Contact</a></li>
         <li><a href="">Projects</a></li>
       </ul>
     </div>
     <div class="footer nav-link">
-      Copyright &copy;2022 Owned by <a href="">Hephzisoft</a>
+      Copyright &copy;2022 Owned by <a href="{% url 'home' %}">Hephzisoft</a>
     </div>
   </div>
 </nav>
