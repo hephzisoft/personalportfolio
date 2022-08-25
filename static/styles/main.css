@@ -20,7 +20,7 @@ body {
   position: absolute;
   left: 15%;
   top: 40px;
-  width: 90%;
+  width: 85%;
   height: 1000vh;
   z-index: 0;
   background-color: var(--bg-color);

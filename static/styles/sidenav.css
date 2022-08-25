@@ -13,6 +13,7 @@
   position: fixed;
   background-color: var(--color3);
   display: block;
+  z-index: 100;
   align-items: center;
 }
 .sidenav .large .logo {
