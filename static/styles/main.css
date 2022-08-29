@@ -1,3 +1,4 @@
+/* *** General Styling  */
 * {
   color: white;
   padding: 0;
@@ -16,7 +17,6 @@ body {
   --color2: #dd2910;
   --color3: #8e522e;
 }
-
 .main {
   position: absolute;
   left: 15%;
@@ -26,6 +26,16 @@ body {
   z-index: 0;
   background-color: var(--bg-color);
 }
+#btn{
+  padding: 10px 5px;
+  background-color: var(--color3);
+  border: 1px solid var(--color3);
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+
+}
+/***** Landing page styling   */
 .info {
   background-image: url("https://res.cloudinary.com/hephzisoft/image/upload/v1659725423/Hephzisoft/pexels-ivan-samkov-9629901_dbr6vi.jpg");
   background-position: center;
@@ -41,15 +51,21 @@ body {
 .info-text h2 span{
   color: var(--color2);
 }
+
+/* ** About section */
 .about-section{
+  display: block;
+}
+.about-upper{
   display: flex;
   gap: 20px;
 }
-.about-section .about-text{
+.about-upper .about-text{
   
   text-align: center;
   padding-top: 50px;
 }
+
 @media (max-width: 500px) {
   .main {
     width: 100%;
