@@ -1,29 +1,51 @@
 {% extends 'main.html' %} {% load static %} {% block content %}
-<main class="main">
-  <section
-    class="info d-flex align-items-center justify-content-center text-white"
-  >
-    <div class="info-text">
-      <h2 class="text-wrap">
-       <span>Hi!</span> <br />
-       I am a Mobile App Developer, <br />  Back-end Developer.
-      </h2>
-    </div>
-  </section>
-  <section class="p-5 container-fluid about-section" id="about">
-    <div class="about-upper">
-      <div class="about-img col-lg-6">
-        <img src="https://res.cloudinary.com/hephzisoft/image/upload/v1661108460/Hephzisoft/istockphoto-1167549766-612x612_snm8zt.jpg" class="img-fluid" alt="">
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+  <main class="main">
+    <section class="info d-flex align-items-center justify-content-center text-white">
+      <div class="info-text">
+        <h2 class="text-wrap">
+          <span>Hi!</span> <br />
+          I am a Mobile App Developer, <br /> Back-end Developer.
+        </h2>
       </div>
-      <div class="about-text col-lg-6  ">
-       <p class="text-black text-left align-items-start"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deleniti perferendis. Harum, aut eum accusamus impedit doloremque veritatis asperiores laborum sint officiis accusantium autem sed vel ut labore deserunt distinctio veniam dignissimos natus omnis soluta repellendus vero! Asperiores cumque inventore perferendis consequuntur molestias natus, praesentium maiores, consequatur accusantium rerum nesciunt.</p>
-       <a href="" id="btn">Contact me</a>
+    </section>
+    <section class="p-3 container-fluid about-section mt-5" id="about">
+      <div class="about-upper">
+        <div class="about-img col-lg-6">
+          <img src="https://res.cloudinary.com/hephzisoft/image/upload/v1661108460/Hephzisoft/istockphoto-1167549766-612x612_snm8zt.jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="about-text col-lg-6 mt-5">
+          <h3 class="text-black about-text-header">About me</h3>
+          <p class="text-black about-text-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, deleniti perferendis. Harum, aut eum accusamus impedit doloremque veritatis asperiores laborum sint officiis accusantium autem sed vel ut labore deserunt distinctio veniam dignissimos natus omnis soluta repellendus vero! Asperiores cumque inventore perferendis consequuntur molestias natus, praesentium maiores, consequatur accusantium rerum nesciunt.</p>
+          <p class="about-btn">
+            <a href="https://wa.me/message/TNCHIU52BDWNP1" id="btn" class="btn" target="_blank">Contact me</a>
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="contact">
-   <div class="contact-form"></div>
-   <div class="contact-info"></div>
-  </section>
-</main>
+    </section>
+    <section id="skills"></section>
+    <section id="projects"></section>
+    <section class="p-3 container-fluid contact-section mt-5" id="contact">
+      <div class="contact-info">
+        <div id="contact-box d-flex">
+          <p class="bg-danger" style="color: red;">
+            <i class="fa-solid fa-globe"></i>
+          </p>
+        </div>
+      </div>
+      <div class="contact-form"></div>
+    </section>
+  </main>
 {% endblock %}
